@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+ <!--обозначает то что мы пишем html код , атрибут lang объявляет основной язык страницы -->
+<head>
+    <!-- Здесь находятся все метаданные страницы -->
+    <meta charset="UTF-8"> <!-- meta преоставляет браузеру метаданные о документе; атрибут charster объявляет кодировку utf-8-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--viewport контролирует масштаб отображения страницы на устройствах  -->
+    <!--content со значениями width=device-width и initial-scale=1.0 задает ширину видимой области равной ширине устройств при отсутствии изначального масштабирования.  -->
+    <title>Space aircrafts</title><!--Здесь мы задаем имя страницы , которое будет отображаться в верхней части окна-->
+
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+
+ 
+</head>
+<body>
+
+
+ <!-- Здесь находится все содержимое страницы-->
+ <header class="header">
+    <div class="header-container">
+        <div class="header-body">
+            <a href="index.html" class="header__logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li>
+                        <a href="index.html" class="header__link">Главная</a>
+                    </li>
+                    <li>
+                        <a href="ourTeam.html" class="header__link">Наша команда</a>
+                    </li>
+                    <li>
+                        <a href="galerey.html" class="header__link">Галерея</a>
+                    </li>
+                    <li>
+                        <a href="TitlesAbout.html" class="header__link">Статьи</a>
+                    </li>
+                    <li>
+                        <a href="registration.html" class="header__link">Регистрация</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</header>
+
+
+
+
+
+<main>
+
+<!--Видео с полным экраном в начале-->
+    <div class="full-screen">
+        <div class="full-screen-body">
+            <div class="full-screen-title">
+                Космос
+            </div>
+            <div class="full-screen-text">
+                для мечтателей
+            </div>
+            <div class="full-screen-cat">
+                Купи билет на <u>космический корабль</u> прямо сейчас
+            </div>
+            <div class="containerforbtncat">
+                <a href="">
+                    <span class="btncat">подробнее</span>
+                </a>
+    
+            </div>
+            
+        </div>    
+            <video autoplay muted loop preload="auto" class="full-screen-video">
+                <source type="video/mp4" src="normandy-video.mp4">
+            </video>
+    
+    </div>
+<!--Банер с человеком смотрящим на космос-->
+    <div class="space-banner-card">
+        <img src="img/milky-way.jpg" alt="">
+        <div class="space-banner-text">
+            <h4>Космос для мечтателей</h4>
+            <p>Независимо от того, где каждый из нас находится на этой планете,
+                 которую мы называем домом, мы все смотрим в одно и то же место.
+                  Вот почему мы считаем, что космос принадлежит всем:
+                   предприимчивым, дерзким и любопытным.</p>
+        </div>
+    </div>
+<!--Горизонтальная прокрутка-->
+    <div class="horizontal-container" data-2100="transform:translateX(0%);" data-4000="transform:translateX(-300%);">
+        <section>
+            <div class="h-content">
+                <h2>Этапы полета</h2>
+                <p>Сначала купите билет на нашем сайте! После предоставления Ваших данных, менеджер свяжется с вами для уточнения всей необходимой информации.</p>
+            <!-- Кнопка 2-->
+    <form action="registration.html"> 
+        <button role="button" class="button-28">Купить сейчас</button>
+    </form>
+    
+
+            </div>
+        </section>
+        <section>
+            <div class="h-content">
+                <h2>Подготовка к полету</h2>
+                <p>Наши инженеры подготовят ракету ко взлету, а инструкторы расскажут все необходимое и приведут Вас в необходимое для полета физическое состояние с помощью тренировок. </p>
+            </div>
+        </section>
+        <section>
+            <div class="h-content">
+                <h2>Добро пожаловать в космос</h2>
+                <p>Во время полета с Вами будут находится наши самые опытные пилоты, так что вы спокойно сможете насладиться красивейшим видом.</p>
+            </div>
+        </section>
+        <section>
+            <div class="h-content">
+                <h2>Приземление</h2>
+                <p>На посадочной площадке вас будут ждать наши специалисты, чтобы проверить Ваше моральное и физическое состояние.</p>
+                <form action="registration.html"> 
+                    <button role="button" class="button-28">Купить сейчас</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="script.js"></script>
+
+<script type="text/javascript" src="skrollr.js"></script>
+<script type="text/javascript">
+var s = skrollr.init();
+</script>
+</body>
+</html>
